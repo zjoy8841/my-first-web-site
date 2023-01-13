@@ -4,18 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB</title>
+    <title>Product Specialist</title>
+    <style>
+        /*
+        table, th, td {
+            border: 1px solid black;
+        }*/
+        body {
+            margin: 0px;
+        }
+        th {
+            text-align: left;
+        }
+        h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+        h1.head {
+            border-bottom: 2px solid black;
+            padding: 20px;
+            margin: 0;
+        }
+        #grid {
+            /*border: solid red 5px;*/
+            display: grid;
+            grid-template-columns: 200px 1fr;
+        }
+        #left {
+            border-right: 2px solid black;
+            margin: 0;
+            padding: 20px;
+            /*width: 100px;*/
+            
+        }
+        #right {
+            padding: 20px;
+        }
+        a:link {
+            text-decoration: none;
+            color: black;
+        }
+        a:visited {
+            color: gray;
+        }
+        a:active {
+            color: aqua;
+        }
+        div.emphasis {
+            color: blueviolet;
+            font-weight: bold;
+        }
+        #goodStyle {
+            color: brown;
+        }
+    </style>
 </head>
 <body>
-    <h1><a href="index.html">WEB</a></h1>
-    <ol>
-        <li><a href="1.html">HTML</a></li>
-        <li><a href="2.html">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
-    </ol>
-    <h2>WEB</h2>
-    <p>
-        The World Wide Web (WWW), commonly known as the Web, is an information system enabling documents and other web resources to be accessed over the Internet. Documents and downloadable media are made available to the network through web servers and can be accessed by programs such as web browsers. Servers and resources on the World Wide Web are identified and located through character strings called uniform resource locators (URLs). The original and still very common document type is a web page formatted in Hypertext Markup Language (HTML). This markup language supports plain text, images, embedded video and audio contents, and scripts (short programs) that implement complex user interaction. The HTML language also supports hyperlinks (embedded URLs) which provide immediate access to other web resources. Web navigation, or web surfing, is the common practice of following such hyperlinks across multiple websites. Web applications are web pages that function as application software. The information in the Web is transferred across the Internet using the Hypertext Transfer Protocol (HTTP).
-    </p>
+    <h1 class="head"><a href="index.html">Product Specialist</a></h1>
+    <div id="grid">
+        <div id="left">
+            <ol>
+                <li>정보</li>
+                <li>경력</li>
+                <li>학력</li>
+                <li>자기소개서</li>
+            </ol>
+        </div>
+        <div id="right">
+            <table style="width: 1000px;">
+                <tr>
+                    <th>닉네임</th>
+                    <td>Lucas</td>
+                </tr>
+                <tr>
+                    <th>휴대번호</th>
+                    <td>010-<abbr title="4634">****</abbr>-7078</td>
+                </tr>
+                <tr>
+                    <th>주소</th>
+                    <td>경기도 화성시 동탄지성로 469번길 59 반정아이파크캐슬 <abbr title="404-1206">***-****</abbr></td>
+                </tr>
+            </table>
+            <h3>좌우명</h3>
+            <ol>
+                <li>말은 기도와 같다.</li>
+                <li>기분은 태도가 아니다.</li>
+                <li>공부의 본질은 "최소한으로 배워서 최대한으로 써먹는것" 이다.</li>
+            </ol>
+            <h3>학력</h3>
+            <table>
+                <tr>
+                    <td>최종학력</td>
+                    <td>경희사이버대학교</td>
+                </tr>
+            </table>
+            <h3>경력</h3>
+            <table>
+                <tr>
+                    <td>전체 경력 n년 n개월</td>
+                </tr>
+                <tr>
+                    <td><a href="1_it.html">IT 서비스(제품) 기획 n년n개월</a></td>
+                </tr>
+                <tr>
+                    <td><a href="2_sales.html">보험영업 3년3개월</a></td>
+                </tr>
+                <tr>
+                    <td><a href="3_cloth.html">의류 사업 6년2개월</a></td>
+                </tr>
+            </table>
+            <div class="emphasis">
+                <h3>장점 vs 단점</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis qui reiciendis porro vel iusto natus, fugiat ea veritatis, omnis reprehenderit sed. Totam tempora modi consectetur officia. Doloremque harum perferendis dolore.
+                </p>
+            </div>
+            <div>
+                <h3>잘하는 것 vs 못하는 것</h3>
+                <p id="goodStyle">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptate minus itaque officia sunt esse fugit eveniet cumque iste quo, asperiores, perspiciatis fuga, odio hic? Distinctio tempore quae modi officia?
+                </p>
+            </div>
+            <h3>출근룩</h3>
+            <h3>매일 하는 것</h3>
+            <h3>Code</h3>
+        </div>
+    </div>
 </body>
 </html>
